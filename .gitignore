@@ -1,0 +1,12 @@
+# Don't track content of these folders
+_pychache_/
+.config/
+.idea/
+# Compiled source
+*.pdf
+*.exe
+*.docs
+*.class
+*.dll
+*.txt
+_init_.py
