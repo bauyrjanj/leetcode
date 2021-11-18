@@ -5,7 +5,7 @@ def text_just(words, maxlen):
 
     for w in words:
 
-        if len(w) + n+ len(lst) > maxlen:
+        if len(w) + n + len(lst) > maxlen:
             gaps = (len(lst)-1) or 1
             q, r = divmod(maxlen-n, gaps)
 
