@@ -37,7 +37,6 @@ def maze_bfs(grid, s, e): # maze, start, end
     return -1
 
 # DFS - notice the usage of stack - iterative implementation
-
 def maze_dfs(grid, s, e): # maze, start, end
     stack = []
     r_start, c_start = s
@@ -70,7 +69,7 @@ def maze_dfs(grid, s, e): # maze, start, end
 
     return -1
 
-# DFS
+# DFS - recursion
 from collections import namedtuple
 WHITE, BLACK = range(2)
 coordinate = namedtuple('Coordinate', ('x', 'y'))
