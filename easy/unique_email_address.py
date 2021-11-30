@@ -18,4 +18,3 @@ if __name__=="__main__":
     # emails = ["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"]
     emails = ["test.email+alex@leetcode.com", "test.email.leet+alex@code.com"]
     print(unique_email(emails))
-    

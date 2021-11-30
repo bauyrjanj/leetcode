@@ -1,4 +1,3 @@
-
 # BFS - notice the usage of queue - iterative implementation
 def maze_bfs(grid, s, e): # maze, start, end
     # Assume 1s are walls and 0s are open spaces
@@ -104,7 +103,7 @@ if __name__=="__main__":
 
     # [0, 4]
     # [4, 4]
-    print(maze_dfs(m, (0,4), (4,4)))
+    print(maze_bfs(m, (0,4), (4,4)))
     print(maze2(m, coordinate(0, 4), coordinate(4, 4)))
 
 

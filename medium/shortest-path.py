@@ -11,6 +11,7 @@ def shortest_path(grid):
 
     while d:
         cr, cc, cdist = d.popleft()
+        print((cr, cc))
 
         if cr == nrows - 1 and cc == ncols - 1 and grid[cr][cc]!=1:
             return cdist

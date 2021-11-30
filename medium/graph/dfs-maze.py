@@ -1,3 +1,4 @@
+# Recursive approach
 def dfs(grid, s, e):
     directions = [[1, 0], [0, -1], [0, 1], [-1, 0]]
     if s==e:

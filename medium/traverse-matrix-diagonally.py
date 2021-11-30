@@ -91,8 +91,7 @@ def traverseDiagonal2(n, mat):
                 c -= 1
     return result
 
-
-
+# I tried to solve this problem with breadth-first-search but have to figure our how to reverse the diagonals
 def traverse_diag(mat):
     nrow, ncol = len(mat), len(mat[0])
     # directions = [[1, -1], [-1, 1], [0, 1], [0, -1], [1, 0]]
@@ -126,4 +125,7 @@ if __name__ == "__main__":
            [4, 5, 6],
            [7, 8, 9]]
 
-    print(traverse_diag(mat))
+    # print(traverse_diag(mat))
+    print(traverseDiagonal1(3, mat))
+    print(traverseDiagonal2(3, mat))
+    print(printMatrixDiagonal(mat, 3))
