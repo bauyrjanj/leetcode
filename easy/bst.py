@@ -30,8 +30,6 @@ def bst(root, low, high):
             pass
     return total
 
-
-
 # Recursive solution
 def bst2(root, low, high):
     if not root:
