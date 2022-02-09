@@ -1,9 +1,8 @@
 def dobt(root):
-    global ans
     ans = 0
 
     def depth(p):
-        global ans
+        nonlocal ans
         if p==None:
             return 0
         left, right = depth(p.left), depth(p.right)
@@ -13,6 +12,15 @@ def dobt(root):
     depth(root)
 
     return ans
+
+# Return the PATH instead - WIP
+def dobt_path(root):
+    if root==None:
+        return []
+    if len(dobt_path(root.left))>=len(dobt_path(root.right)):
+        return [root.val]+dobt_path(root.left)
+    else:
+        return [root.val]+dobt_path(root.right)
 
 class node:
     def __init__(self, val=0, left=None, right=None):
@@ -30,5 +38,6 @@ if __name__ == "__main__":
     root.right = c2
     c1.left = c3
     c1.right = c4
-    print(dobt(root))
+    print(dobt_path(root))
+
 
